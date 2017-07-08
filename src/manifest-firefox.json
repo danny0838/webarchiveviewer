@@ -6,6 +6,8 @@
   "author": "Danny Lin",
   "default_locale": "en",
 
+  "content_security_policy": "script-src 'self' 'unsafe-eval' blob:; object-src 'self' blob:",
+
   "applications": {
     "gecko": {
       "id": "webarchiveviewer.beta@danny0838.addons.mozilla.org",
