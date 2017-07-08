@@ -13,7 +13,7 @@ chrome.webRequest.onBeforeRequest.addListener(function (details) {
   // use a random hash to avoid recursive redirect
   if (!/\.(htz|maff)/i.test(url.pathname) || url.searchParams.has(utils.options.viewerRedirectKey)) { return; }
 
-  var newUrl = new URL(chrome.runtime.getURL("viewer/viewer.html"));
+  var newUrl = new URL(chrome.runtime.getURL("viewer.html"));
   newUrl.hash = url.hash;
   url.hash = "";
   newUrl.search = "?src=" + encodeURIComponent(url.href);
@@ -25,6 +25,6 @@ chrome.webRequest.onBeforeRequest.addListener(function (details) {
 }, {urls: ["<all_urls>"]}, ["blocking"]);
 
 chrome.browserAction.onClicked.addListener(function (tab) {
-  var url = chrome.runtime.getURL("viewer/viewer.html");
+  var url = chrome.runtime.getURL("viewer.html");
   chrome.tabs.create({url: url}, () => {});
 });

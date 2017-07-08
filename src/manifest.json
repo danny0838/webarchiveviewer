@@ -11,8 +11,8 @@
   "incognito": "split",
 
   "icons": {
-    "32": "core/viewer_32.png",
-    "128": "core/viewer_128.png"
+    "32": "viewer_32.png",
+    "128": "viewer_128.png"
   },
 
   "permissions": [
@@ -28,27 +28,27 @@
     "scripts": [
       "lib/mime.js",
       "lib/jszip.js",
-      "core/common.js",
-      "viewer/background.js"
+      "common.js",
+      "background.js"
     ]
   },
 
   "web_accessible_resources": [
     "lib/mime.js",
     "lib/jszip.js",
-    "core/common.js",
-    "viewer/zipviewer.js"
+    "common.js",
+    "zipviewer.js"
   ],
 
   "options_ui": {
     "chrome_style": false,
-    "page": "core/options.html"
+    "page": "options.html"
   },
 
   "browser_action": {
     "default_icon": {
-      "32": "core/viewer_32.png",
-      "128": "core/viewer_128.png"
+      "32": "viewer_32.png",
+      "128": "viewer_128.png"
     },
     "default_title": "__MSG_BrowserActionTitle__"
   }
