@@ -11,7 +11,8 @@
   "incognito": "split",
 
   "icons": {
-    "32": "viewer_32.png",
+    "16": "viewer_16.png",
+    "48": "viewer_48.png",
     "128": "viewer_128.png"
   },
 
@@ -47,8 +48,8 @@
 
   "browser_action": {
     "default_icon": {
-      "32": "viewer_32.png",
-      "128": "viewer_128.png"
+      "19": "viewer_19.png",
+      "38": "viewer_38.png"
     },
     "default_title": "__MSG_BrowserActionTitle__"
   }
