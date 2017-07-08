@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>__MSG_ViewerTitle__</title>
+<script src="../lib/jszip.js"></script>
+<script src="../lib/mime.js"></script>
+<script src="../core/common.js"></script>
+<script src="viewer.js"></script>
+<style>
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+#reloader {
+  display: none;
+}
+
+#file-selector-drop, #reloader-reload {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: grey;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#file-selector-drop.dragover {
+  background-color: SkyBlue;
+}
+
+#file-selector-input {
+  display: none;
+}
+</style>
+</head>
+<body>
+<div id="reloader">
+  <div id="reloader-reload">__MSG_ViewerReloadText__</div>
+</div>
+<div id="file-selector">
+  <div id="file-selector-drop">__MSG_ViewerFileSelectorText__</div>
+  <input id="file-selector-input" type="file">
+</div>
+</body>
+</html>

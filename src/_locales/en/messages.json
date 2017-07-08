@@ -1,0 +1,32 @@
+{
+  "BrowserActionTitle": {
+    "description": "Title for the browser action that's visible to the user of extension",
+    "message": "View archive page"
+  },
+  "ExtensionDescription": {
+    "description": "Description of the extension as it's visible to the outside world",
+    "message": "View web page archives such as .htz, .maff, etc., in the browser."
+  },
+  "ExtensionName": {
+    "description": "Name of the extension as it's visible to the outside world",
+    "message": "Web Archive Viewer"
+  },
+  "OpenOptions": {
+    "message": "Options"
+  },
+  "OptionsSaveLabel": {
+    "message": "Save"
+  },
+  "OptionsResetLabel": {
+    "message": "Reset"
+  },
+  "ViewerTitle": {
+    "message": "View archive page"
+  },
+  "ViewerFileSelectorText": {
+    "message": "Click me or drop an HTML archive file here to open it..."
+  },
+  "ViewerReloadText": {
+    "message": "Click me to reload the archive file..."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_ExtensionName__",
+  "description": "__MSG_ExtensionDescription__",
+  "version": "0.1.0",
+  "author": "Danny Lin",
+  "default_locale": "en",
+
+  "applications": {
+    "gecko": {
+      "id": "webarchiveviewer.beta@danny0838.addons.mozilla.org",
+      "strict_min_version": "48.0",
+      "update_url": "https://danny0838.github.io/webarchiveviewer/files/firefox/updates.json"
+    }
+  },
+
+  "icons": {
+    "32": "core/viewer_32.png",
+    "128": "core/viewer_128.png"
+  },
+
+  "permissions": [
+    "storage",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "lib/mime.js",
+      "lib/jszip.js",
+      "core/common.js",
+      "viewer/background.js"
+    ]
+  },
+
+  "web_accessible_resources": [
+    "lib/mime.js",
+    "lib/jszip.js",
+    "core/common.js",
+    "viewer/zipviewer.js"
+  ],
+
+  "options_ui": {
+    "browser_style": false,
+    "page": "core/options.html"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "32": "core/viewer_32.png",
+      "128": "core/viewer_128.png"
+    },
+    "default_title": "__MSG_BrowserActionTitle__"
+  }
+}

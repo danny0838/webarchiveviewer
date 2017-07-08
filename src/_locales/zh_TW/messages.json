@@ -1,0 +1,32 @@
+{
+  "BrowserActionTitle": {
+    "description": "Title for the browser action that's visible to the user of extension",
+    "message": "檢視封存網頁"
+  },
+  "ExtensionDescription": {
+    "description": "Description of the extension as it's visible to the outside world",
+    "message": "用瀏覽器檢視網頁封存檔，包括 .htz、.maff 等。"
+  },
+  "ExtensionName": {
+    "description": "Name of the extension as it's visible to the outside world",
+    "message": "封存網頁檢視器"
+  },
+  "OpenOptions": {
+    "message": "選項"
+  },
+  "OptionsSaveLabel": {
+    "message": "儲存"
+  },
+  "OptionsResetLabel": {
+    "message": "重設"
+  },
+  "ViewerTitle": {
+    "message": "檢視封存網頁"
+  },
+  "ViewerFileSelectorText": {
+    "message": "點我或拖曳 HTML 封存檔案至此以開啟之..."
+  },
+  "ViewerReloadText": {
+    "message": "點我重新載入封存頁面..."
+  }
+}
