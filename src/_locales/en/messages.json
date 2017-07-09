@@ -3,6 +3,12 @@
     "description": "Title for the browser action that's visible to the user of extension",
     "message": "View archive page"
   },
+  "ErrorImportOptions": {
+    "message": "Error on importing options: $REASON$",
+    "placeholders": {
+      "reason": {"content": "$1"}
+    }
+  },
   "ExtensionDescription": {
     "description": "Description of the extension as it's visible to the outside world",
     "message": "View web page archives such as .htz, .maff, etc., in the browser."
@@ -13,6 +19,15 @@
   },
   "OpenOptions": {
     "message": "Options"
+  },
+  "OptionsExportLabel": {
+    "message": "Export"
+  },
+  "OptionsImportLabel": {
+    "message": "Import"
+  },
+  "OptionsImportSuccess": {
+    "message": "Successfully imported options."
   },
   "OptionsSaveLabel": {
     "message": "Save"

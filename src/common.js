@@ -141,6 +141,17 @@ utils.filenameParts = function (filename) {
   return [filename, ""];
 };
 
+utils.dateToId = function (date) {
+  var dd = date || new Date();
+  return dd.getUTCFullYear() +
+      this.intToFixedStr(dd.getUTCMonth() + 1, 2) +
+      this.intToFixedStr(dd.getUTCDate(), 2) +
+      this.intToFixedStr(dd.getUTCHours(), 2) +
+      this.intToFixedStr(dd.getUTCMinutes(), 2) +
+      this.intToFixedStr(dd.getUTCSeconds(), 2) +
+      this.intToFixedStr(dd.getUTCMilliseconds(), 3);
+};
+
 
 /********************************************************************
  * String handling
@@ -203,6 +214,12 @@ utils.stringToDataUri = function (str, mime, charset) {
   mime = mime || "";
   charset = charset ? ";charset=" + charset : "";
   return "data:" + mime + charset + ";base64," + this.unicodeToBase64(str);
+};
+
+utils.intToFixedStr = function (number, width, padder) {
+  padder = padder || "0";
+  number = number.toString(10);
+  return number.length >= width ? number : new Array(width - number.length + 1).join(padder) + number;
 };
 
 utils.byteStringToArrayBuffer = function (bstr) {
