@@ -6,43 +6,7 @@
 
 var OPTION_PREFIX = "opt_";
 
-function getOptionFromDocument(id) {
-  var elem = document.getElementById(OPTION_PREFIX + id);
-  switch (elem.getAttribute("type")) {
-    case "checkbox":
-      return elem.checked;
-    default:
-      return elem.value;
-  }
-}
-
-function setOptionToDocument(id, value) {
-  var elem = document.getElementById(OPTION_PREFIX + id);
-  switch (elem.getAttribute("type")) {
-    case "checkbox":
-      elem.checked = value;
-      break;
-    default:
-      elem.value = value;
-      break;
-  }
-}
-
-window.addEventListener("DOMContentLoaded", (event) => {
-  // load languages
-  utils.loadLanguages(document);
-
-  // form
-  document.getElementById("options").addEventListener("submit", (event) => {
-    for (let id in utils.options) {
-      utils.options[id] = getOptionFromDocument(id);
-    }
-    utils.saveOptions(() => {
-      window.close();
-    });
-    event.preventDefault();
-  });
-
+function initDefaultOptions() {
   // create elements for default options
   for (let id in utils.options) {
     let value = utils.options[id];
@@ -103,4 +67,45 @@ window.addEventListener("DOMContentLoaded", (event) => {
       setOptionToDocument(id, value);
     }
   });
+}
+
+function getOptionFromDocument(id) {
+  var elem = document.getElementById(OPTION_PREFIX + id);
+  switch (elem.getAttribute("type")) {
+    case "checkbox":
+      return elem.checked;
+    default:
+      return elem.value;
+  }
+}
+
+function setOptionToDocument(id, value) {
+  var elem = document.getElementById(OPTION_PREFIX + id);
+  switch (elem.getAttribute("type")) {
+    case "checkbox":
+      elem.checked = value;
+      break;
+    default:
+      elem.value = value;
+      break;
+  }
+}
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  // load languages
+  utils.loadLanguages(document);
+
+  // event handlers
+  document.getElementById("options").addEventListener("submit", (event) => {
+    for (let id in utils.options) {
+      utils.options[id] = getOptionFromDocument(id);
+    }
+    utils.saveOptions(() => {
+      window.close();
+    });
+    event.preventDefault();
+  });
+
+  // default options
+  initDefaultOptions();
 });
