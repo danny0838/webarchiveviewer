@@ -19,6 +19,7 @@
   "permissions": [
     "storage",
     "tabs",
+    "unlimitedStorage",
     "webRequest",
     "webRequestBlocking",
     "<all_urls>"
