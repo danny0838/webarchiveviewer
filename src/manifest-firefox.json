@@ -37,6 +37,7 @@
       "lib/jszip.js",
       "common.js",
       "background.js",
+      "optionsAuto.js",
       "pageActionLoader.js"
     ]
   },

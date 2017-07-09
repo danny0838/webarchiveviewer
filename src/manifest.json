@@ -30,7 +30,8 @@
       "lib/mime.js",
       "lib/jszip.js",
       "common.js",
-      "background.js"
+      "background.js",
+      "optionsAuto.js"
     ]
   },
 
