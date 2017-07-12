@@ -16,6 +16,8 @@
     }
   },
 
+  "homepage_url": "https://github.com/danny0838/webarchiveviewer",
+
   "icons": {
     "16": "viewer_16.png",
     "48": "viewer_48.png",
