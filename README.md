@@ -4,7 +4,7 @@ Click on the toolbar icon to open the viewer page, and then pick an archive file
 
 You can also open an archive file with the browser directly to view it. (Firefox can only do this for web-served files.)
 
-This extension is available in Chromium-based browsers (Google Chrome, Opera, Vivadi, etc), and Firefox PC and Android.
+This extension is available for Chromium-based browsers (Google Chrome, Opera, Vivadi, etc), Firefox Desktop and Firefox for Android.
 
 Supported archive file formats are:
 
@@ -12,7 +12,7 @@ Supported archive file formats are:
 
 2. **maff**: A file format which each webpage as well as its referenced resources are packed into a top sub-directory of a file using the zip algorithm. See [official introduction](http://maf.mozdev.org/index.html) for detail.
 
-Use [Web ScrapBook](https://github.com/danny0838/webscrapbook) to save a webpage as the above formats.
+You can use [Web ScrapBook](https://github.com/danny0838/webscrapbook) to save a webpage as the above formats.
 
 We'll support .epub, .mht, .chm, etc, in the future if viable.
 
