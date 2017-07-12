@@ -41,6 +41,18 @@
   "OptionUseFileSystemApiTooltip": {
     "message": "在支援的瀏覽器上使用 filesystem API 建立虛擬檔案系統檢視封存檔案，有佳的效能及保真性。"
   },
+  "OptionViewHtzLabel": {
+    "message": "檢視 .htz:"
+  },
+  "OptionViewHtzTooltip": {
+    "message": "瀏覽器載入 .htz 檔案時，自動以檢視器檢視。"
+  },
+  "OptionViewMaffLabel": {
+    "message": "檢視 .maff:"
+  },
+  "OptionViewMaffTooltip": {
+    "message": "瀏覽器載入 .maff 檔案時，自動以檢視器檢視。"
+  },
   "ViewerTitle": {
     "message": "檢視封存網頁"
   },

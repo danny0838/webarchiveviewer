@@ -41,6 +41,18 @@
   "OptionUseFileSystemApiTooltip": {
     "message": "Use filesystem API to create a virtual filesystem and view the archive file when supported, to get a better performance and fidelity."
   },
+  "OptionViewHtzLabel": {
+    "message": "View .htz:"
+  },
+  "OptionViewHtzTooltip": {
+    "message": "When the browser loads a .htz file, view it with the viewer."
+  },
+  "OptionViewMaffLabel": {
+    "message": "View .maff:"
+  },
+  "OptionViewMaffTooltip": {
+    "message": "When the browser loads a .maff file, view it with the viewer."
+  },
   "ViewerTitle": {
     "message": "View archive page"
   },

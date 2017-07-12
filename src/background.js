@@ -11,7 +11,17 @@ chrome.webRequest.onBeforeRequest.addListener(function (details) {
 
   var url = new URL(details.url);
   // use a random hash to avoid recursive redirect
-  if (!/\.(htz|maff)/i.test(url.pathname) || url.searchParams.has(utils.options.viewerRedirectKey)) { return; }
+  if (!url.searchParams.has(utils.options.viewerRedirectKey)) {
+    if (utils.options.viewHtz && url.pathname.toLowerCase().endsWith(".htz")) {
+      // redirect
+    } else if (utils.options.viewMaff && url.pathname.toLowerCase().endsWith(".maff")) {
+      // redirect
+    } else {
+      return; // no redirect
+    }
+  } else {
+    return; // no redirect
+  }
 
   var newUrl = new URL(chrome.runtime.getURL("viewer.html"));
   newUrl.hash = url.hash;

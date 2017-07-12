@@ -17,6 +17,8 @@ var isDebug = false;
 utils.options = {
   viewerRedirectKey: "QEDbgTS2R2uqCZYy",
   useFileSystemApi: true,
+  viewHtz: true,
+  viewMaff: true
 };
 
 utils.isOptionsSynced = false;
