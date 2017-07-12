@@ -21,43 +21,10 @@ utils.options = {
 
 utils.isOptionsSynced = false;
 
-utils.getOption = function (key, defaultValue) {
-  var result = utils.options[key];
-  if (result === undefined) {
-    result = defaultValue;
-  }
-  return result;
-};
-
-utils.getOptions = function (keyPrefix) {
-  var result = {};
-  var regex = new RegExp("^" + utils.escapeRegExp(keyPrefix) + ".");
-  for (let key in utils.options) {
-    if (regex.test(key)) {
-      result[key] = utils.getOption(key);
-    }
-  }
-  return result;
-};
-
-utils.setOption = function (key, value, callback) {
-  utils.options[key] = value;
-  chrome.storage.sync.set({key: value}, () => {
-    if (callback) {
-      callback({key: value});
-    }
-  });
-};
-
 utils.loadOptions = function (callback) {
   chrome.storage.sync.get(utils.options, (items) => {
     for (let i in items) {
-      var item = items[i];
-      if (Object.prototype.toString.call(item) === "[object Array]") {
-        utils.options[i] = item[item.pop()];
-      } else {
-        utils.options[i] = item;
-      }
+      utils.options[i] = items[i];
     }
     utils.isOptionsSynced = true;
     if (callback) {
