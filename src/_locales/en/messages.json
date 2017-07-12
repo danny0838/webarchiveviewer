@@ -35,6 +35,12 @@
   "OptionsResetLabel": {
     "message": "Reset"
   },
+  "OptionUseFileSystemApiLabel": {
+    "message": "Use Filesystem API:"
+  },
+  "OptionUseFileSystemApiTooltip": {
+    "message": "Use filesystem API to create a virtual filesystem and view the archive file when supported, to get a better performance and fidelity."
+  },
   "ViewerTitle": {
     "message": "View archive page"
   },

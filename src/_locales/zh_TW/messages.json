@@ -35,6 +35,12 @@
   "OptionsResetLabel": {
     "message": "重設"
   },
+  "OptionUseFileSystemApiLabel": {
+    "message": "使用 Filesystem API:"
+  },
+  "OptionUseFileSystemApiTooltip": {
+    "message": "在支援的瀏覽器上使用 filesystem API 建立虛擬檔案系統檢視封存檔案，有佳的效能及保真性。"
+  },
   "ViewerTitle": {
     "message": "檢視封存網頁"
   },
