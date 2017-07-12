@@ -61,7 +61,7 @@ utils.loadOptions = function (callback) {
     }
     if (callback) {
       utils.isOptionsSynced = true;
-      callback(utils.options);
+      callback(items);
     }
   });
 };
