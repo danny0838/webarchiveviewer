@@ -85,8 +85,7 @@ utils.lang = function (key, args) {
 
 utils.loadLanguages = function (rootNode) {
   Array.prototype.forEach.call(rootNode.getElementsByTagName("*"), (elem) => {
-    var str = elem.textContent;
-    if (/^__MSG_(.*?)__$/.test(str)) {
+    if (elem.childNodes.length === 1 && /^__MSG_(.*?)__$/.test(elem.textContent)) {
       elem.textContent = utils.lang(RegExp.$1);
     }
     Array.prototype.forEach.call(elem.attributes, (attr) => {
