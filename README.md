@@ -4,7 +4,7 @@ Click on the toolbar icon to open the viewer page, and then pick an archive file
 
 You can also open an archive file with the browser directly to view it. (Firefox can only do this for web-served files.)
 
-This extension is available for Chromium-based browsers (Google Chrome, Opera, Vivadi, etc), Firefox Desktop and Firefox for Android.
+This extension is available for Chromium-based browsers (Google Chrome, Opera, Vivadi, etc), and Firefox for Desktop and Android.
 
 Supported archive file formats are:
 
@@ -19,7 +19,7 @@ We'll support .epub, .mht, .chm, etc, in the future if viable.
 
 ## Caveats:
 
-* A vary large zip file (around 2 GiB) cannot be opened by the browser.
+* A vary large zip file (around 2 GiB) cannot be read by the browser.
 
 * A large file in the zip (around 400~500 MiB) can exhaust the memory and crash the extension.
 
