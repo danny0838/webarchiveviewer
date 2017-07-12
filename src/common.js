@@ -59,8 +59,8 @@ utils.loadOptions = function (callback) {
         utils.options[i] = item;
       }
     }
+    utils.isOptionsSynced = true;
     if (callback) {
-      utils.isOptionsSynced = true;
       callback(items);
     }
   });
