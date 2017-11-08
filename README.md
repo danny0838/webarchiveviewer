@@ -1,3 +1,5 @@
+**WARNING: Development of this project has been stopped. Use [Web ScrapBook](https://github.com/danny0838/webscrapbook) instead.**
+
 *Web Archive Viewer* is a browser addon that views an HTML-based web page archive.
 
 Click on the toolbar icon to open the viewer page, and then pick an archive file for viewing.
